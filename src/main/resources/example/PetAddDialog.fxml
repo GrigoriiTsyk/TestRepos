@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="example.PetAddDialogController"
+      prefHeight="300.0" prefWidth="370.0" spacing="10" alignment="CENTER" styleClass="body">
+
+    <padding>
+        <Insets bottom="25" left="25" right="25" top="25" />
+    </padding>
+
+    <children>
+        <HBox spacing="10" styleClass="editgroupe">
+            <children>
+                <Label text="Kind" prefHeight="40.0" prefWidth="100.0" />
+                <TextField fx:id="addKind" prefHeight="40.0" prefWidth="200.0" />
+            </children>
+        </HBox>
+        <HBox spacing="10" styleClass="editgroupe">
+            <children>
+                <Label text="Name" prefHeight="40.0" prefWidth="100.0" />
+                <TextField fx:id="addName" prefHeight="40.0" prefWidth="200.0" />
+            </children>
+        </HBox>
+        <HBox spacing="10" styleClass="editgroupe">
+            <children>
+                <Label text="Year" prefHeight="40.0" prefWidth="100.0"/>
+                <TextField fx:id="addYear" prefHeight="40.0" prefWidth="200.0" />
+            </children>
+        </HBox>
+        <HBox spacing="10" styleClass="editgroupe">
+            <children>
+                <Label text="Month" prefHeight="40.0" prefWidth="100.0"/>
+                <TextField fx:id="addMonth" prefHeight="40.0" prefWidth="200.0" />
+            </children>
+        </HBox>
+        <HBox spacing="10" styleClass="editgroupe">
+            <children>
+                <Label text="Owner name" prefHeight="40.0" prefWidth="100.0"/>
+                <TextField fx:id="addOwnerName" prefHeight="40.0" prefWidth="200.0" />
+            </children>
+        </HBox>
+        <HBox spacing="120" styleClass="editgroupe">
+            <children>
+                <Button fx:id="submit" onAction="#handleOk" prefWidth="100.0" text="Add" />
+                <Button fx:id="reset" onAction="#handleCancel" prefWidth="100.0" text="Cancel"  />
+            </children>
+        </HBox>
+    </children>
+    <stylesheets>
+        <URL value="@dialogstyle.css"/>
+    </stylesheets>
+</VBox>
